@@ -23,7 +23,7 @@ if edad >=18:
     impuesto=salario_parseado*(tasa/100)
     correo=input("ingrese su correo: ")
     msg=f"su impuesta sera {impuesto} le enviaremos los datos a su correo. Gracias"
-    print(msg)
+    print(msg   )
 else:
     msgError=f"""Hola {nombre} , 
             usted aun no califica para aportar impuestos.
