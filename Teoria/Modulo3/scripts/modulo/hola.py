@@ -1,0 +1,7 @@
+def saludar():
+    print("""Hola, te estoy saludando desde la función saludar() 
+          del módulo hola""")
+
+
+def hola():
+    print('Hola')
