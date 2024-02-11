@@ -9,7 +9,7 @@ clientes=[
         {'datos':{"nombre":["juan","cornejo rondoy","7776431"],"dni":"7776431"},"direccion":["mz xx cudara12",'localia1','distrito','lima'],"saldo":1000}
         ]
 
-productos:[
+productos=[
     {'nombre':"producto1","stock":50,"precio":150,"localia":["lima","aqp","ica"]},
     {'nombre':"producto2","stock":0,"precio":10,"localia":["lima"]},
     {'nombre':"producto3","stock":10,"precio":1500,"localia":[]},
@@ -33,7 +33,8 @@ if dni in lista_dni:
     print("1.ver saldo")
     print("2.ver mi localia ")
     print("3.comprar productos")
-    opcion=input("ingrese su opcion:")
+    print("4.salir")
+    opcion=int(input("ingrese su opcion:"))
     saldo=clientes[index]["saldo"]
     if opcion==1:  
         msg=f'su saldo es {saldo}'
@@ -64,10 +65,12 @@ if dni in lista_dni:
                 else:
                     print("el producto no tiene stock")
             else:
-                print("gracias")
-            
+                print("gracias")  
         else:
             print("el producto no existe en la lista")
-
+    elif opcion==4:
+        print("gracias hasta luego")
+    else:
+        print("esta opcion no es valida")
 else: 
     print("el cliente no se encuentra en la tienda")
