@@ -1,4 +1,4 @@
-## tienda  => clientes , productos 
+##  v0 tienda  => clientes , productos 
 
 clientes=[
         {'datos':{"nombre":["juan","cornejo rondoy","7776470"],"dni":"7776470"},"direccion":["mz xx cudara12",'localia1','distrito','lima'],"saldo":1500},
@@ -18,6 +18,14 @@ productos=[
     {'nombre':"producto6","stock":20,"precio":20,"localia":["aqp"]},
     {'nombre':"producto7","stock":30,"precio":200,"localia":["lima"]}
 ]
+
+"""productos.append({'nombre':inputProduct,'stock':inputStock})
+ 
+    producto_tmp=productos[3]
+    productos[3]=newInput
+    productos.append(producto_tmp)
+    productos.insert(3,newProduct)
+"""
 
 print("Bienvenidos a la Tienda datux")
 dni=input("ingrese su dni")
